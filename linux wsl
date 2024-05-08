@@ -1,0 +1,38 @@
+WSL: Allow linux to run on windows
+
+To install WSL:
+1. Control panel --> programs --> Turn on windows features --> Windows subsystem for linux
+2. Need to reboot the PC
+3. Need to install a linux distribution
+4. Windows store --> Ubuntu LTS (long term support)
+We can use Debian too.
+
+Launch from the start menu: 
+It is a very minimal system so there is no gcc or python
+EXECUTE sudo apt-get update
+EXECUTE sudo apt-get install gcc
+
+
+nano helloworld.c
+gcc helloworld.c
+./a.out
+
+EXECUTE sudo apt install python3-pip
+EXECUTE sudo pip3 install -U netmiko
+
+
+df -h
+cd /mnt/c
+
+WSL is like a container, we can open multiple linux windows
+
+Download Windows Terminal from MicroSoft store
+
+# Set wsl to version 2
+EXECUTE wsl --set-version NAME 2
+EXECUTE wsl -l -v
+
+
+
+EXECUTE uname -a
+EXECUTE lsb_release -a
